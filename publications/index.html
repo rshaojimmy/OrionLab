@@ -1,53 +1,487 @@
-<!DOCTYPE html>
-<html lang="en">
-
+﻿<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Publications | OrionLab</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <meta name="author" content="OrionLab">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Rui Shao, Shao Rui, OrionLab, HIT, Harbin Institute of Technology, Shenzhen">
+
+  <title>Publications</title>
+
+  <link href="../static/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="../static/xin.css" rel="stylesheet">
+  <link rel="stylesheet" href="../static/pixyll.css" type="text/css">
 </head>
 
 <body>
-  <div class="container">
-    <header>
-      <h1>OrionLab</h1>
-      <p>Multimodal Perception, Reasoning, and Decision</p>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="publications.html">Publications</a>
-        <a href="team.html">Team</a>
-      </nav>
-    </header>
-
-    <main>
-      <section>
-        <h2>Selected Publications</h2>
-        <ul class="publication-list">
-          <li>
-            <strong>Multimodal Agents for Embodied GUI Reasoning</strong><br />
-            <em>Author1, Author2, Author3</em><br />
-            Conference on Computer Vision and Pattern Recognition (CVPR), 2025.
-          </li>
-          <li>
-            <strong>Symbolic and Embodied Reasoning with Large Vision-Language Models</strong><br />
-            <em>Author A, Author B</em><br />
-            NeurIPS, 2024.
-          </li>
-          <li>
-            <strong>Generalizing to Open-World Multimodal Tasks</strong><br />
-            <em>Team OrionLab</em><br />
-            arXiv preprint, 2024.
-          </li>
+  <nav class="navbar navbar-inverse navbar-static-top" style="border-bottom: none;">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <span class="navbar-brand" style="color: white;">OrionLab</span>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="../index.html">Home</a></li>
+          <li class="active"><a href="index.html">Publications</a></li>
+          <li><a href="../projects/index.html">Projects</a></li>
+          <li><a href="../team/index.html">Team</a></li>
         </ul>
-      </section>
-    </main>
+      </div>
+    </div>
+  </nav>
 
-    <footer>
-      <p>&copy; 2025 OrionLab</p>
-    </footer>
+  <section id="publications" class="section">
+    <div class="container">
+  <div class="section-title">
+    <h2>Publications</h2>
+    <p style="font-size: 16px;">
+      Full list available at
+      <a href="https://scholar.google.com/citations?hl=en&user=9Vc--XsAAAAJ" target="_blank">Google Scholar</a>.
+    </p>
   </div>
-</body>
 
+      <div class="subsection">
+        <h3>Preprints <span style="font-size: 14px; font-weight: normal;">(* denotes corresponding authors)</span></h3>
+
+        <div class="pub-entry" style="display: flex; margin-bottom: 20px;">
+          <img src="../linkfile/CVPR2025/falcon.jpg" width="260px" height="110px" style="flex-shrink: 0;">
+          <div style="margin-left: 15px;">
+            <p><strong>FALCON: Resolving Visual Redundancy and Fragmentation in High-resolution Multimodal Large Language Models via Visual Registers</strong></p>
+            <p>Renshan Zhang, <b>Rui Shao*</b>, Gongwei Chen, Kaiwen Zhou, Weili Guan, Liqiang Nie*</p>
+            <p>[<a href="https://arxiv.org/pdf/2501.16297?" target="_blank">arXiv</a>]</p>
+          </div>
+        </div>
+
+        <div class="pub-entry" style="display: flex; margin-bottom: 20px;">
+          <img src="../linkfile/ACL2024sub/ECoT.jpg" width="260px" height="160px" style="flex-shrink: 0;">
+          <div style="margin-left: 15px;">
+            <p><strong>Enhancing Emotional Generation Capability of Large Language Models via Emotional Chain-of-Thought</strong></p>
+            <p>Zaijing Li, <b>Rui Shao*</b>, Gongwei Chen, Dongmei Jiang, Liqiang Nie</p>
+            <p>[<a href="https://arxiv.org/pdf/2401.06836.pdf" target="_blank">arXiv</a>]</p>
+          </div>
+        </div>
+
+        <div class="pub-entry" style="display: flex; margin-bottom: 20px;">
+          <img src="../linkfile/NeurIPS2024/tokencompressor.jpg" width="260px" height="130px" style="flex-shrink: 0;">
+          <div style="margin-left: 15px;">
+            <p><strong>Token-level Correlation-guided Compression for Efficient Multimodal Document Understanding</strong></p>
+            <p>Renshan Zhang, Yibo Lyu, <b>Rui Shao*</b>, Gongwei Chen, Weili Guan, Liqiang Nie*</p>
+            <p>[<a href="https://arxiv.org/pdf/2407.14439" target="_blank">arXiv</a>]</p>
+          </div>
+        </div>
+
+      <hr>
+        <div class="subsection">
+        <h3>Selected Publications <span style="font-size: 14px; font-weight: normal;">(* denotes corresponding authors)</span></h3>
+        <!-- <h3>Selected Publications</h3> -->
+
+        <div class="pub-entry" style="display: flex; gap: 20px; margin-bottom: 20px;">
+          <img src="../linkfile/ACL2025.jpg" width="260px" height="180px" alt="ACL2025 Thumbnail">
+          <div class="pub-info">
+            <p><strong>GUI-explorer: Autonomous Exploration and Mining of Transition-aware Knowledge for GUI Agent</strong></p>
+            <p>Bin Xie, <strong>Rui Shao*</strong>, Gongwei Chen, Kaiwen Zhou, Yinchuan Li, Jie Liu, Min Zhang, Liqiang Nie</p>
+            <p><i>The 63rd Annual Meeting of the Association for Computational Linguistics (<b>ACL</b>), Main, 2025.</i></p>
+            <p>
+              [<a href="#">arXiv</a>]
+              [<a href="#">Code</a>]
+              [<a href="#">Project Page</a>]
+            </p>
+          </div>
+        </div>
+
+        <div class="pub-entry" style="display: flex; gap: 20px; margin-bottom: 20px;">
+          <img src="../linkfile/ICML2025/ICML2025.jpg" width="260px" height="160px" alt="ICML2025 Thumbnail">
+          <div class="pub-info">
+            <p><strong>STAR: Learning Diverse Robot Skill Abstractions through Rotation-Augmented Vector Quantization</strong></p>
+            <p>Hao Li, Qi Lv, <strong>Rui Shao*</strong>, Xiang Deng, Yinchuan Li, Jianye Hao, Liqiang Nie</p>
+            <p><i>International Conference on Machine Learning (<b>ICML</b>), 2025. Spotlight (2.6%)</i></p>
+            <p>
+              [<a href="#">arXiv</a>]
+              [<a href="#">Code</a>]
+              [<a href="#">Project Page</a>]
+            </p>
+          </div>
+        </div>
+
+        <div class="pub-entry" style="display: flex; gap: 20px; margin-bottom: 20px;">
+          <img src="../linkfile/CVPR2025/LION-FS.jpg" width="260px" height="160px" alt="LION-FS Thumbnail">
+          <div class="pub-info">
+            <p><strong>LION-FS: Fast & Slow Video-Language Thinker as Online Video Assistant</strong></p>
+            <p>Wei Li, Bing Hu, <strong>Rui Shao*</strong>, Leyang Shen, Liqiang Nie</p>
+            <p><i>IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2025.</i></p>
+            <p>
+              [<a href="https://arxiv.org/pdf/2503.03663">arXiv</a>]
+              [<a href="https://github.com/JiuTian-VL/LION-FS">Code</a>]
+            </p>
+          </div>
+        </div>
+
+        <div class="pub-entry" style="display: flex; gap: 20px; margin-bottom: 20px;">
+          <img src="../linkfile/CVPR2025/optimus-2.jpg" width="260px" height="140px" alt="Optimus-2 Thumbnail">
+          <div class="pub-info">
+            <p><strong>Optimus-2: Multimodal Minecraft Agent with Goal-Observation-Action Conditioned Policy</strong></p>
+            <p>Zaijing Li, Yuquan Xie, <strong>Rui Shao*</strong>, Gongwei Chen, Dongmei Jiang, Liqiang Nie*</p>
+            <p><i>IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2025.</i></p>
+            <p>
+              [<a href="https://arxiv.org/pdf/2502.19902">arXiv</a>]
+              [<a href="https://github.com/lizaijing/Optimus-2?tab=readme-ov-file">Code</a>]
+              [<a href="https://cybertronagent.github.io/Optimus-2.github.io/">Project Page</a>]
+            </p>
+          </div>
+        </div>
+
+        <div class="pub-entry" style="display: flex; gap: 20px; margin-bottom: 20px;">
+          <img src="../linkfile/CVPR2025/KStar.jpg" width="260px" height="140px" alt="KStar Thumbnail">
+          <div class="pub-info">
+            <p><strong>Spatial-Temporal Graph Diffusion Policy with Kinematics Modeling for Bimanual Robotic Manipulation</strong></p>
+            <p>Qi Lv, Hao Li, Xiang Deng, <strong>Rui Shao</strong>, Yinchuan Li, Jianye Hao, Longxiang Gao, Michael Yu Wang, Liqiang Nie</p>
+            <p><i>IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2025.</i></p>
+            <p>
+              [<a href="https://arxiv.org/pdf/2503.10743">arXiv</a>]
+              [<a href="#">Code</a>]
+            </p>
+          </div>
+        </div>
+
+        <div class="pub-entry" style="display: flex; gap: 20px; margin-bottom: 20px;">
+          <img src="../linkfile/ICLR2025/spa-bench.jpg" width="260px" height="120px" alt="SPA-Bench Thumbnail">
+          <div class="pub-info">
+            <p><strong>SPA-Bench: A Comprehensive Benchmark for SmartPhone Agent Evaluation</strong></p>
+            <p>Jingxuan Chen, Derek Yuen, Bin Xie, Yuhao Yang, Gongwei Chen, Zhihao Wu, Li Yixing, Xurui Zhou, Weiwen Liu, Shuai Wang, Kaiwen Zhou, <strong>Rui Shao*</strong>, Liqiang Nie, Yasheng Wang, Jianye Hao, Jun Wang, Kun Shao*</p>
+            <p><i>The Thirteenth International Conference on Learning Representations (<b>ICLR</b>), 2025. Spotlight (5.1%)</i></p>
+            <p>
+              [<a href="https://arxiv.org/pdf/2410.15164">arXiv</a>]
+              [<a href="https://github.com/ai-agents-2030/SPA-Bench">Code</a>]
+              [<a href="https://ai-agents-2030.github.io/SPA-Bench//">Project Page</a>]
+            </p>
+          </div>
+        </div>
+
+        <div class="pub-entry" style="display: flex; gap: 20px; margin-bottom: 20px;">
+          <img src="../linkfile/NeurIPS2024/Optimus-1.jpg" width="260px" height="160px" alt="Optimus-1 Thumbnail">
+          <div class="pub-info">
+            <p><strong>Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks</strong></p>
+            <p>Zaijing Li, Yuquan Xie, <strong>Rui Shao*</strong>, Gongwei Chen, Dongmei Jiang, Liqiang Nie*</p>
+            <p><i>Thirty-eighth Annual Conference on Neural Information Processing Systems (<b>NeurIPS</b>), 2024.</i></p>
+            <p>
+              [<a href="https://arxiv.org/pdf/2408.03615">arXiv</a>]
+              [<a href="https://github.com/JiuTian-VL/Optimus-1">Code</a>]
+              [<a href="https://cybertronagent.github.io/Optimus-1.github.io/">Project Page</a>]
+            </p>
+          </div>
+        </div>
+
+        <div class="pub-entry" style="display: flex; gap: 20px; margin-bottom: 20px;">
+          <img src="../linkfile/NeurIPS2024/MoME.jpg" width="260px" height="160px" alt="MoME Thumbnail">
+          <div class="pub-info">
+            <p><strong>MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models</strong></p>
+            <p>Leyang Shen, Gongwei Chen, <strong>Rui Shao*</strong>, Weili Guan, Liqiang Nie*</p>
+            <p><i>Thirty-eighth Annual Conference on Neural Information Processing Systems (<b>NeurIPS</b>), 2024.</i></p>
+            <p>
+              [<a href="https://arxiv.org/pdf/2407.12709">arXiv</a>]
+              [<a href="https://github.com/JiuTian-VL/MoME">Code</a>]
+            </p>
+          </div>
+        </div>
+
+        <div class="pub-entry" style="display: flex; gap: 20px; margin-bottom: 20px;">
+          <img src="../linkfile/CVPR2024/LION.jpg" width="260px" height="90px" alt="LION Thumbnail">
+          <div class="pub-info">
+            <p><strong>LION: Empowering Multimodal Large Language Model with Dual-Level Visual Knowledge</strong></p>
+            <p>Gongwei Chen, Leyang Shen, <strong>Rui Shao*</strong>, Xiang Deng, Liqiang Nie*</p>
+            <p><i>IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2024.</i></p>
+            <p>
+              [<a href="https://arxiv.org/pdf/2311.11860.pdf">arXiv</a>]
+              [<a href="https://github.com/JiuTian-VL/JiuTian-LION">Code</a>]
+              [<a href="https://rshaojimmy.github.io/Projects/JiuTian-LION">Project Page</a>]
+              [<a href="https://mp.weixin.qq.com/s/lIhXb4YM7vjh8VidmnA_0w">Press</a>]
+            </p>
+          </div>
+        </div>
+
+        <div class="pub-entry" style="display: flex; gap: 20px; margin-bottom: 20px;">
+          <img src="../linkfile/ECCV2022/ECCV2022-ext.jpg" width="260px" height="120px" alt="SeqDeepFake Thumbnail">
+          <div class="pub-info">
+            <p><strong>Robust Sequential DeepFake Detection</strong></p>
+            <p><strong>Rui Shao</strong>, Tianxing Wu, Ziwei Liu</p>
+            <p><i>International Journal of Computer Vision (<b>IJCV</b>), 2025</i></p>
+            <p>
+              [<a href="https://arxiv.org/pdf/2309.14991.pdf">arXiv</a>]
+              [<a href="../linkfile/IJCV2025-SeqDeepFake.pdf">PDF</a>]
+              [<a href="https://github.com/rshaojimmy/SeqDeepFake">Code</a>]
+            </p>
+          </div>
+        </div>
+
+
+        <div class="pub-entry" style="display: flex; gap: 20px; margin-bottom: 20px;">
+          <img src="../linkfile/DeepFake-Adatper/deepfake-adapter.jpg" width="260px" height="160px" alt="DeepFake-Adapter Thumbnail">
+          <div class="pub-info">
+            <p><strong>DeepFake-Adapter: Dual-Level Adapter for DeepFake Detection</strong></p>
+            <p><strong>Rui Shao</strong>, Tianxing Wu, Liqiang Nie, Ziwei Liu</p>
+            <p><i>International Journal of Computer Vision (<b>IJCV</b>), 2025</i></p>
+            <p>
+              [<a href="https://arxiv.org/pdf/2306.00863.pdf">arXiv</a>]
+              [<a href="../linkfile/IJCV2025-DeepFake-Adapter.pdf">PDF</a>]
+              [<a href="https://github.com/rshaojimmy/DeepFake-Adapter">Code</a>]
+            </p>
+          </div>
+        </div>
+
+        <div class="pub-entry" style="display: flex; gap: 20px; margin-bottom: 20px;">
+          <img src="../linkfile/CVPR2023/CVPR2023-ext.jpg" width="260px" height="90px" alt="CVPR2023 Thumbnail">
+          <div class="pub-info">
+            <p><strong>Detecting and Grounding Multi-Modal Media Manipulation and Beyond</strong></p>
+            <p><strong>Rui Shao</strong>, Tianxing Wu, Jianlong Wu, Liqiang Nie, Ziwei Liu</p>
+            <p><i>IEEE Transactions on Pattern Analysis and Machine Intelligence (<b>TPAMI</b>), 2024</i></p>
+            <p>
+              [<a href="https://arxiv.org/pdf/2309.14203.pdf">arXiv</a>]
+              [<a href="https://github.com/rshaojimmy/MultiModal-DeepFake">Code</a>]
+              [<a href="https://rshaojimmy.github.io/Projects/MultiModal-DeepFake">Project Page</a>]
+              [<a href="https://mp.weixin.qq.com/s/gHcRSKDNaWq9b7b5-GA9PA">Press</a>]
+            </p>
+          </div>
+        </div>
+
+        <div class="pub-entry" style="display: flex; gap: 20px; margin-bottom: 20px;">
+          <img src="../linkfile/ECCV2024/ECCV2024.jpg" width="270px" height="100px" alt="ECCV2024 Thumbnail">
+          <div class="pub-info">
+            <p><strong>CAT: Enhancing Multimodal Large Language Model to Answer Questions in Dynamic Audio-Visual Scenarios</strong></p>
+            <p>Qilang Ye, Zitong Yu, <strong>Rui Shao</strong>, Xinyu Xie, Philip Torr, Xiaochun Cao</p>
+            <p><i>European Conference on Computer Vision (<b>ECCV</b>), 2024.</i></p>
+            <p>
+              [<a href="https://arxiv.org/pdf/2403.04640">arXiv</a>]
+              [<a href="https://github.com/rikeilong/Bay-CAT">Code</a>]
+              [<a href="https://github.com/rikeilong/Bay-CAT?tab=readme-ov-file">Project Page</a>]
+            </p>
+          </div>
+        </div>
+
+        <div class="pub-entry" style="display: flex; gap: 20px; margin-bottom: 20px;">
+          <img src="../linkfile/CVPR2023/CVPR2023.png" width="260px" height="120px" alt="CVPR2023 Thumbnail">
+          <div class="pub-info">
+            <p><strong>Detecting and Grounding Multi-Modal Media Manipulation</strong></p>
+            <p><strong>Rui Shao</strong>, Tianxing Wu, Ziwei Liu</p>
+            <p><i>IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2023.</i></p>
+            <p>
+              [<a href="https://arxiv.org/abs/2304.02556">arXiv</a>]
+              [<a href="https://github.com/rshaojimmy/MultiModal-DeepFake">Code</a>]
+              [<a href="https://rshaojimmy.github.io/Projects/MultiModal-DeepFake">Project Page</a>]
+              [<a href="https://mp.weixin.qq.com/s/gHcRSKDNaWq9b7b5-GA9PA">Press</a>]
+            </p>
+          </div>
+        </div>
+
+        <div class="pub-entry" style="display: flex; gap: 20px; margin-bottom: 20px;">
+          <img src="../linkfile/bmvc2023.jpg" width="260px" height="120px" alt="BMVC2023 Thumbnail">
+          <div class="pub-info">
+            <p><strong>Video Infilling with Rich Motion Prior</strong></p>
+            <p>Xinyu Hou, Liming Jiang, <strong>Rui Shao</strong>, Chen Change Loy</p>
+            <p><i>British Machine Vision Conference (<b>BMVC</b>), 2023.</i></p>
+            <p>
+              [<a href="#">arXiv</a>]
+              [<a href="#">Code</a>]
+            </p>
+          </div>
+        </div>
+
+        <div class="pub-entry" style="display: flex; gap: 20px; margin-bottom: 20px;">
+          <img src="../linkfile/ECCV2022/ECCV2022.png" width="260px" height="120px" alt="ECCV2022 Thumbnail">
+          <div class="pub-info">
+            <p><strong>Detecting and Recovering Sequential DeepFake Manipulation</strong></p>
+            <p><strong>Rui Shao</strong>, Tianxing Wu, Ziwei Liu</p>
+            <p><i>European Conference on Computer Vision (<b>ECCV</b>), 2022.</i></p>
+            <p>
+              [<a href="https://arxiv.org/pdf/2207.02204.pdf" target="_blank">arXiv</a>]
+              [<a href="https://github.com/rshaojimmy/SeqDeepFake" target="_blank">Code</a>]
+              [<a href="https://rshaojimmy.github.io/Projects/SeqDeepFake" target="_blank">Project Page</a>]
+              [<a href="../linkfile/ECCV2022/poster_1347.pdf" target="_blank">Poster</a>]
+              [<a href="https://www.marktechpost.com/2022/07/17/researchers-at-ntu-singapore-propose-seq-deepfake-transformer-seqfakeformer-for-detecting-and-recovering-sequential-deepfake-manipulations/" target="_blank">Press1</a>]
+              [<a href="https://mp.weixin.qq.com/s/KJ7b6pmIp6RRrQ_g9GGJUw" target="_blank">Press2</a>]
+              [<a href="https://mp.weixin.qq.com/s/4IdI87iwsFS7uuTc1_8u2g" target="_blank">Press3</a>]
+              [<a href="https://mp.weixin.qq.com/s/wJ-8lf-94S38FJrWpIFXQA" target="_blank">Press4</a>]
+            </p>
+          </div>
+        </div>
+
+        <div class="pub-entry" style="display: flex; gap: 20px; margin-bottom: 20px;">
+          <img src="../linkfile/ECCV2020/IJCV2022.jpg" width="260px" height="130px" alt="IJCV2022 Thumbnail">
+          <div class="pub-info">
+            <p><strong>Open-set Adversarial Defense with Clean-Adversarial Mutual Learning</strong></p>
+            <p><strong>Rui Shao</strong>, Pramuditha Perera, Pong C. Yuen, Vishal M. Patel</p>
+            <p><i>International Journal of Computer Vision (<b>IJCV</b>), 2022</i></p>
+            <p>
+              [<a href="https://arxiv.org/pdf/2202.05953.pdf" target="_blank">arXiv</a>]
+              [<a href="https://link.springer.com/content/pdf/10.1007/s11263-022-01581-0.pdf" target="_blank">PDF</a>]
+              [<a href="https://github.com/rshaojimmy/IJCV2022-OSDN-CAML" target="_blank">Code</a>]
+            </p>
+          </div>
+        </div>
+
+        <div class="pub-entry" style="display: flex; gap: 20px; margin-bottom: 20px;">
+          <img src="../linkfile/IJCB2020/fedpadext.jpg" width="260px" height="160px" alt="TNNLS2022 Thumbnail">
+          <div class="pub-info">
+            <p><strong>Federated Generalized Face Presentation Attack Detection</strong></p>
+            <p><strong>Rui Shao</strong>, Pramuditha Perera, Pong C. Yuen, Vishal M. Patel</p>
+            <p><i>IEEE Transactions on Neural Networks and Learning Systems (<b>TNNLS</b>), 2022.</i></p>
+            <p>
+              [<a href="https://arxiv.org/pdf/2104.06595.pdf" target="_blank">arXiv</a>]
+              [<a href="https://ieeexplore.ieee.org/document/9780603" target="_blank">PDF</a>]
+              [<a href="https://github.com/rshaojimmy/TNNLS2022-FedGPAD" target="_blank">Code</a>]
+            </p>
+          </div>
+        </div>
+
+        <div class="pub-entry" style="display: flex; gap: 20px; margin-bottom: 20px;">
+          <img src="../linkfile/FG2021.jpg" width="250px" height="140px" alt="FG2021 Thumbnail">
+          <div class="pub-info">
+            <p><strong>Federated Test-Time Adaptive Face Presentation Attack Detection with Dual-Phase Privacy Preservation</strong></p>
+            <p><strong>Rui Shao</strong>, Bochao Zhang, Pong C. Yuen, Vishal M. Patel</p>
+            <p><i>IEEE International Conference on Automatic Face and Gesture Recognition (<b>FG</b>), 2021</i></p>
+            <p>
+              [<a href="https://arxiv.org/pdf/2110.12613.pdf" target="_blank">arXiv</a>]
+              [<a href="https://ieeexplore.ieee.org/document/9666952" target="_blank">PDF</a>]
+            </p>
+          </div>
+        </div>
+
+        <div class="pub-entry" style="display: flex; gap: 20px; margin-bottom: 20px;">
+          <img src="../linkfile/MICCAI2021.jpg" width="250px" height="140px" alt="MICCAI2021 Thumbnail">
+          <div class="pub-info">
+            <p><strong>Focusing on Clinically Interpretable Features: Selective Attention Regularization for Liver Biopsy Image Classification</strong></p>
+            <p>Chong Yin, Siqi Liu, <strong>Rui Shao</strong>, Pong C. Yuen</p>
+            <p><i>Medical Image Computing and Computer Assisted Interventions (<b>MICCAI</b>), 2021</i></p>
+            <p>
+              [<a href="https://link.springer.com/content/pdf/10.1007/978-3-030-87240-3_15.pdf" target="_blank">PDF</a>]
+            </p>
+          </div>
+        </div>
+
+        <div class="pub-entry" style="display: flex; gap: 20px; margin-bottom: 20px;">
+          <img src="../linkfile/ECCV2020/eccv2020.png" width="250px" height="140px" alt="ECCV2020 Thumbnail">
+          <div class="pub-info">
+            <p><strong>Open-set Adversarial Defense</strong></p>
+            <p><strong>Rui Shao</strong>, Pramuditha Perera, Pong C. Yuen, Vishal M. Patel</p>
+            <p><i>European Conference on Computer Vision (<b>ECCV</b>), 2020</i></p>
+            <p>
+              [<a href="https://arxiv.org/pdf/2009.00814.pdf">arXiv</a>]
+              [<a href="https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123620664.pdf">PDF</a>]
+              [<a href="https://github.com/rshaojimmy/ECCV2020-OSAD">Code</a>]
+            </p>
+          </div>
+        </div>
+
+        <div class="pub-entry" style="display: flex; gap: 20px; margin-bottom: 20px;">
+          <img src="../linkfile/AAAI2020/aaai2020.png" width="250px" height="140px" alt="AAAI2020 Thumbnail">
+          <div class="pub-info">
+            <p><strong>Regularized Fine-grained Meta Face Anti-spooﬁng</strong></p>
+            <p><strong>Rui Shao</strong>, Xiangyuan Lan, Pong C. Yuen</p>
+            <p><i>Thirty-Fourth AAAI Conference on Artificial Intelligence (<b>AAAI</b>), 2020</i></p>
+            <p>
+              [<a href="https://arxiv.org/pdf/1911.10771.pdf">arXiv</a>]
+              [<a href="../linkfile/AAAI2020/6873-Article Text-10102-1-10-20200525.pdf">PDF</a>]
+              [<a href="../linkfile/AAAI2020/AAAI2020_RFMetaFAS.pdf">Poster</a>]
+              [<a href="https://github.com/rshaojimmy/AAAI2020-RFMetaFAS">Code</a>]
+            </p>
+          </div>
+        </div>
+
+        <div class="pub-entry" style="display: flex; gap: 20px; margin-bottom: 20px;">
+          <img src="../linkfile/CVPR2019/cvpr2019.jpg" width="240px" height="180px" alt="CVPR2019 Thumbnail">
+          <div class="pub-info">
+            <p><strong>Multi-adversarial Discriminative Deep Domain Generalization for Face Presentation Attack Detection</strong></p>
+            <p><strong>Rui Shao</strong>, Xiangyuan Lan, Jiawei Li, Pong C. Yuen</p>
+            <p><i>IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2019</i></p>
+            <p>
+              [<a href="http://openaccess.thecvf.com/content_CVPR_2019/html/Shao_Multi-Adversarial_Discriminative_Deep_Domain_Generalization_for_Face_Presentation_Attack_Detection_CVPR_2019_paper.html">PDF</a>]
+              [<a href="../linkfile/CVPR2019/RuiShao_CVPR_poster_v3.pdf">Poster</a>]
+              [<a href="https://github.com/rshaojimmy/CVPR2019-MADDoG">Code</a>]
+              [<a href="https://drive.google.com/open?id=1Nsi4dxb17ZiuegMVKLPo8cr46EMjhEH8">Model</a>]
+            </p>
+          </div>
+        </div>
+
+        <div class="pub-entry" style="display: flex; gap: 20px; margin-bottom: 20px;">
+          <img src="../linkfile/tifs2018.png" width="270px" height="130px" alt="TIFS2019 Thumbnail">
+          <div class="pub-info">
+            <p><strong>Joint Discriminative Learning of Deep Dynamic Textures for 3D Mask Face Anti-spoofing</strong></p>
+            <p><strong>Rui Shao</strong>, Xiangyuan Lan, Pong C. Yuen</p>
+            <p><i>IEEE Transactions on Information Forensics and Security (<b>TIFS</b>), 2019</i></p>
+            <p>
+              [<a href="https://ieeexplore.ieee.org/document/8453011">PDF</a>]
+              [<a href="https://github.com/rshaojimmy/TIFS2019">Code</a>]
+            </p>
+          </div>
+        </div>
+
+        <div class="pub-entry" style="display: flex; gap: 20px; margin-bottom: 20px;">
+          <img src="../linkfile/iet2019.jpg" width="270px" height="130px" alt="IET-IPR2019 Thumbnail">
+          <div class="pub-info">
+            <p><strong>Adversarial Auto-encoder for Unsupervised Deep Domain Adaptation</strong></p>
+            <p><strong>Rui Shao</strong>, Xiangyuan Lan</p>
+            <p><i>IET Image Processing (<b>IET-IPR</b>), 2019</i></p>
+            <p>
+              [<a href="https://digital-library.theiet.org/content/journals/10.1049/iet-ipr.2018.6687">PDF</a>]
+            </p>
+          </div>
+        </div>
+
+        <div class="pub-entry" style="display: flex; gap: 20px; margin-bottom: 20px;">
+          <img src="../linkfile/ACMMM2018/acmmm2018.png" width="270px" height="120px" alt="ACMMM2018 Thumbnail">
+          <div class="pub-info">
+            <p><strong>Feature Constrained by Pixel: Hierarchical Adversarial Deep Domain Adaptation</strong></p>
+            <p><strong>Rui Shao</strong>, Xiangyuan Lan, Pong C. Yuen</p>
+            <p><i>ACM International Conference on Multimedia (<b>ACM MM</b>), 2018</i></p>
+            <p>
+              [<a href="https://dl.acm.org/citation.cfm?id=3240562">PDF</a>]
+              [<a href="../linkfile/ACMMM2018/acmmm_poster.pdf">Poster</a>]
+              [<a href="https://github.com/rshaojimmy/ACMMM2018-HADDA">Code</a>]
+            </p>
+          </div>
+        </div>
+
+        <div class="pub-entry" style="display: flex; gap: 20px; margin-bottom: 20px;">
+          <img src="../linkfile/ijcb2017.png" width="260px" height="110px" alt="IJCB2017 Thumbnail">
+          <div class="pub-info">
+            <p><strong>Deep Convolutional Dynamic Texture Learning with Adaptive Channel-discriminability for 3D Mask Face Anti-spoofing</strong></p>
+            <p><strong>Rui Shao</strong>, Xiangyuan Lan, Pong C. Yuen</p>
+            <p><i>International Joint Conference on Biometrics (<b>IJCB</b>), 2017</i></p>
+            <p>
+              [<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8272765">PDF</a>]
+            </p>
+          </div>
+        </div>
+
+        <div class="pub-entry" style="display: flex; gap: 20px; margin-bottom: 20px;">
+          <img src="../linkfile/tie2019.jpg" width="260px" height="110px" alt="TIE2019 Thumbnail">
+          <div class="pub-info">
+            <p><strong>Learning Modality-Consistency Feature Templates: A Robust RGB-Infrared Tracking System</strong></p>
+            <p>Xiangyuan Lan, Mang Ye, <strong>Rui Shao</strong>, Bineng Zhong, Pong C. Yuen, Huiyu Zhou</p>
+            <p><i>IEEE Transactions on Industrial Electronics (<b>TIE</b>), 2019</i></p>
+            <p>
+              [<a href="https://ieeexplore.ieee.org/document/8643077">PDF</a>]
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+    </div>
+  </section>
+
+  <div align="center">
+    <small>&copy; 2025 OrionLab</small>
+  </div>
+
+  <script src="../static/jquery.js"></script>
+  <script src="../static/bootstrap/js/bootstrap.js"></script>
+</body>
 </html>

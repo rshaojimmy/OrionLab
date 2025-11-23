@@ -43,7 +43,7 @@
     <div class="row-project">
       <div class="span12">
         <p>
-          Our research primarily focuses on <b>Multimodal Large Language Model (MLLM), Embodied AI, and AI Agent</b>, with an emphasis on perception, reasoning, and decision-making in interactive environments:
+          Our research primarily focuses on <b>Multimodal Large Language Model (MLLM) and Embodied AI</b>, with an emphasis on perception, reasoning, and decision-making in interactive environments:
         </p>
       </div>
   </div>
@@ -51,41 +51,136 @@
   <section>
   <div class="row" style="margin-top: 30px; text-align: center;">
 
-    <!-- 第一个大框：Multimodal Foundation Models + AI Agent 图 -->
-    <div class="col-md-8">
-      <div class="thumbnail" style="padding: 10px;">
-        <div style="display: flex; justify-content: center; gap: 20px;">
-          <img src="./projects_photos/MLLM.jpg" 
-               alt="" 
-               style="max-width: 48%; height: 220px; object-fit: contain;">
+<!-- ===== One-row two blocks (perfectly aligned height) ===== -->
+<div style="
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+  margin-top: 6px;
+  margin-left: -100px;
+  --box-height: 330px;   /* ✅ 统一高度控制在这里 */
+">
 
-          <img src="./projects_photos/GUI.jpg" 
-               alt="" 
-               style="max-width: 48%; height: 220px; object-fit: contain;">
-        </div>
+  <!-- 左框：Multimodal Foundation Models -->
+  <div style="
+    flex: 0 0 28%;
+    height: var(--box-height);
+    padding: 12px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    background: #fafafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  ">
 
-        <div style="margin-top: 12px;">
-          <a href="#" style="text-decoration: none;">
-            <b>Multimodal Foundation Models</b>
-          </a>
-        </div>
+    <img src="./projects_photos/MLLM.jpg"
+         style="height: 240px; object-fit: contain;">
+
+    <div style="margin-top: auto; padding-top: 6px;">
+      <b style="font-size: 16px;">Multimodal Foundation Models</b>
+    </div>
+  </div>
+
+
+  <!-- 右框：Embodied + CogVLA -->
+  <div style="
+    flex: 1;
+    height: var(--box-height);
+    padding: 14px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    background: #fafafa;
+    display: flex;
+    flex-direction: column;
+  ">
+
+    <!-- 图片滚动区 -->
+    <div style="
+      width: 100%;
+      overflow-x: auto;
+      overflow-y: hidden;
+      padding-bottom: 8px;
+      flex-grow: 1;
+    ">
+
+      <div style="
+        display: flex;
+        gap: 36px;
+        align-items: center;
+        width: 760px;
+      ">
+
+        <img src="./projects_photos/embodied.jpg"
+             style="
+               height: 230px;         /* ✅ 缩小一点 */
+               object-fit: contain;
+               flex-shrink: 0;
+             ">
+
+        <img src="./projects_photos/cogvla.png"
+             style="
+               height: 230px;         /* ✅ 缩小一点 */
+               object-fit: contain;
+               flex-shrink: 0;
+             ">
+
       </div>
     </div>
 
-    <!-- 第二个框：Embodied Intelligence -->
-    <div class="col-md-4">
-      <div class="thumbnail" style="padding: 10px;">
-        <img src="./projects_photos/embodied.jpg" 
-             alt="" 
-             style="max-width: 100%; height: 220px; object-fit: contain;">
-
-        <div style="margin-top: 10px;">
-          <a href="#" style="text-decoration: none;">
-            <b>Embodied Intelligence</b>
-          </a>
-        </div>
-      </div>
+    <div style="text-align: center; padding-top: 4px;">
+      <b style="font-size: 16px;">Embodied Intelligence</b>
     </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+<!-- 第一个小框：Multimodal Foundation Models（只保留一张图） -->
+<!-- <div class="col-md-4">
+  <div class="thumbnail" style="padding: 10px;">
+    <div style="display: flex; justify-content: center;">
+      <img src="./projects_photos/MLLM.jpg" 
+           alt="" 
+           style="max-width: 100%; height: 220px; object-fit: contain;">
+    </div>
+
+    <div style="margin-top: 10px; text-align: center;">
+      <a href="#" style="text-decoration: none;">
+        <b>Multimodal Foundation Models</b>
+      </a>
+    </div>
+  </div>
+</div> -->
+
+<!-- 第二个大框：Embodied Intelligence + CogVLA -->
+<!-- <div class="col-md-8">
+  <div class="thumbnail" style="padding: 10px">
+
+    <div style="display: flex; justify-content: center; gap: 20px;">
+      <img src="./projects_photos/embodied.jpg" 
+           alt="" 
+           style="max-width: 48%; height: 220px; object-fit: contain;">
+
+      <img src="./projects_photos/cogvla.png" 
+           alt="" 
+           style="max-width: 48%; height: 220px; object-fit: contain;">
+    </div>
+
+    <div style="margin-top: 12px; text-align: center;">
+      <a href="#" style="text-decoration: none;">
+        <b>Embodied Intelligence</b>
+      </a>
+    </div>
+  </div>
+</div> -->
+
 
   </div>
 </section>
@@ -157,25 +252,7 @@
                     <li>
                     <b>Embodied AI </b> studies agents capable of perceiving, reasoning, and acting within physical environments. 
                     We aim to build systems based on MLLMs that integrate multimodal perception, instruction comprehension, and continuous action planning 
-                    to perform complex 3D tasks such as navigation, manipulation, and interactive behaviors.
-
-                    <!-- 子模块 1：Embodied AI Models -->
-                    <div style="margin-top: 10px; padding-left: 10px;">
-                      <b>• Embodied AI Models</b><br>
-                      We develop MLLM-based VLA systems that integrate vision, language, and action to solve complex 3D tasks such as navigation and manipulation.
-                    </div>
-
-                    <!-- 子模块 2：Embodied AI Learning -->
-                    <div style="margin-top: 8px; padding-left: 10px;">
-                      <b>• Embodied AI Learning</b><br>
-                      We investigate reinforcement learning for VLA models to enable continuous improvement through interaction and environment feedback.
-                    </div>
-
-                    <!-- 子模块 3：Embodied AI Data -->
-                    <div style="margin-top: 8px; padding-left: 10px;">
-                      <b>• Embodied AI Data</b><br>
-                      We build data pipelines with multimodal fusion and demonstration learning to support scalable embodied model training.
-                    </div>
+                    to perform complex 3D tasks such as manipulation, and interactive behaviors.
 
                   </li>
 

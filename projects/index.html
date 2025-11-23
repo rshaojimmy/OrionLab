@@ -51,38 +51,45 @@
   <section>
   <div class="row" style="margin-top: 30px; text-align: center;">
 
-    <!-- 第一张图 -->
-    <div class="col-md-4">
+    <!-- 第一个大框：Multimodal Foundation Models + AI Agent 图 -->
+    <div class="col-md-8">
       <div class="thumbnail" style="padding: 10px;">
-        <img src="./projects_photos/MLLM.jpg" alt="" style="max-width: 100%; height: 180px; object-fit: contain;">
-        <div style="margin-top: 10px;">
-          <a href="#" style="text-decoration: none;"><b>Multimodal Foundation Models</b></a>
+        <div style="display: flex; justify-content: center; gap: 20px;">
+          <img src="./projects_photos/MLLM.jpg" 
+               alt="" 
+               style="max-width: 48%; height: 220px; object-fit: contain;">
+
+          <img src="./projects_photos/GUI.jpg" 
+               alt="" 
+               style="max-width: 48%; height: 220px; object-fit: contain;">
+        </div>
+
+        <div style="margin-top: 12px;">
+          <a href="#" style="text-decoration: none;">
+            <b>Multimodal Foundation Models</b>
+          </a>
         </div>
       </div>
     </div>
 
-    <!-- 第二张图 -->
+    <!-- 第二个框：Embodied Intelligence -->
     <div class="col-md-4">
       <div class="thumbnail" style="padding: 10px;">
-        <img src="./projects_photos/embodied.jpg" alt="" style="max-width: 100%; height: 180px; object-fit: contain;">
-        <div style="margin-top: 10px;">
-          <a href="#" style="text-decoration: none;"><b>Embodied Intelligence</b></a>
-        </div>
-      </div>
-    </div>
+        <img src="./projects_photos/embodied.jpg" 
+             alt="" 
+             style="max-width: 100%; height: 220px; object-fit: contain;">
 
-    <!-- 第三张图 -->
-    <div class="col-md-4">
-      <div class="thumbnail" style="padding: 10px;">
-        <img src="./projects_photos/GUI.jpg" alt="" style="max-width: 100%; height: 180px; object-fit: contain;">
         <div style="margin-top: 10px;">
-          <a href="#" style="text-decoration: none;"><b>AI Agent</b></a>
+          <a href="#" style="text-decoration: none;">
+            <b>Embodied Intelligence</b>
+          </a>
         </div>
       </div>
     </div>
 
   </div>
 </section>
+
 
 <div class="row-project" style="margin-top: 10px;">
             <div class="span12">
@@ -99,64 +106,222 @@
                         style="padding: 2px 6px; background-color: #e5f3ff; color: #005ab5; border-radius: 4px; font-size: 90%; text-decoration: none;">
                         [bilibili]
                       </a>
-                      <!-- 新增 MLLM 视频（YouTube） -->
-                      <div style="margin-top: 10px; display: flex; justify-content: center;">
-                        <iframe width="560" height="315"
-                                src="https://www.youtube.com/embed/VQRLorOiLyo"
-                                title="YouTube video player"
+                      <a href="https://www.bilibili.com/video/BV1uE33zFEDM" 
+                        target="_blank" 
+                        style="padding: 2px 6px; background-color: #e5f3ff; color: #005ab5; border-radius: 4px; font-size: 90%; text-decoration: none;">
+                        [bilibili]
+                      </a>
+                  
+                      <!-- ===== MLLM + AI Agent Demos : Two-column layout ===== -->
+                      <div style="
+                        margin-top: 15px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        gap: 30px 20px;
+                      ">
+
+                        <!-- MLLM Demo -->
+                        <div style="width: 48%; text-align: center;">
+                          <div style="position: relative; width: 100%; padding-top: 56.25%;">
+                            <iframe src="https://www.youtube.com/embed/VQRLorOiLyo"
+                                    title="Multimodal Foundation Models"
+                                    style="position:absolute; inset:0; width:100%; height:100%; border-radius:8px; box-shadow:0 0 6px rgba(0,0,0,0.2);"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen>
+                            </iframe>
+                          </div>
+                        </div>
+
+
+                        <!-- AI Agent Demo + Task -->
+                        <div style="width: 48%; text-align: center;">
+                          <div style="position: relative; width: 100%; padding-top: 56.25%;">
+                            <iframe src="https://www.youtube.com/embed/2A5p8FCffY4?si=g2fW48cUAF3ArRB9"
+                                    title="AI Agent"
+                                    style="position:absolute; inset:0; width:100%; height:100%; border-radius:8px; box-shadow:0 0 6px rgba(0,0,0,0.2);"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen>
+                            </iframe>
+                          </div>
+
+                          <p style="font-style: italic; margin-top: 6px;">
+                            Task instruction: Search today's weather in Shenzhen on Chrome, then write the temperature into <b>today.md</b> using Markor.
+                          </p>
+                        </div>
+
+                      </div>
+                      
+                    <li>
+                    <b>Embodied AI </b> studies agents capable of perceiving, reasoning, and acting within physical environments. 
+                    We aim to build systems based on MLLMs that integrate multimodal perception, instruction comprehension, and continuous action planning 
+                    to perform complex 3D tasks such as navigation, manipulation, and interactive behaviors.
+
+                    <!-- 子模块 1：Embodied AI Models -->
+                    <div style="margin-top: 10px; padding-left: 10px;">
+                      <b>• Embodied AI Models</b><br>
+                      We develop MLLM-based VLA systems that integrate vision, language, and action to solve complex 3D tasks such as navigation and manipulation.
+                    </div>
+
+                    <!-- 子模块 2：Embodied AI Learning -->
+                    <div style="margin-top: 8px; padding-left: 10px;">
+                      <b>• Embodied AI Learning</b><br>
+                      We investigate reinforcement learning for VLA models to enable continuous improvement through interaction and environment feedback.
+                    </div>
+
+                    <!-- 子模块 3：Embodied AI Data -->
+                    <div style="margin-top: 8px; padding-left: 10px;">
+                      <b>• Embodied AI Data</b><br>
+                      We build data pipelines with multimodal fusion and demonstration learning to support scalable embodied model training.
+                    </div>
+
+                  </li>
+
+                  <!-- ===== Robot / Embodied Demos : Two-column layout (fixed) ===== -->
+                  <div style="
+                    margin-top: 15px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    gap: 30px 20px;
+                  ">
+
+                    <!-- Demo 1 : Put the toy in drawer -->
+                  <div style="width: 48%; text-align: center;">
+
+                    <div style="position: relative; width: 100%; padding-top: 56.25%;">
+                      <iframe src="https://www.youtube.com/embed/o97d6H5Z11U"
+                              style="position:absolute; inset:0; width:100%; height:100%; border-radius:8px; box-shadow:0 0 6px rgba(0,0,0,0.2);"
+                              frameborder="0"
+                              allowfullscreen>
+                      </iframe>
+                    </div>
+
+                    <p style="font-style: italic; margin-top: 6px;">
+                      Task instruction: Open the drawer, put the toy inside, and then close it.
+                      <a href="https://www.bilibili.com/video/BV1Hve9zZEWp/?vd_source=1fb867c266cd73e17fb8f7b8020f2f9d"
+                        target="_blank"
+                        style="margin-left: 4px; padding: 2px 6px; background-color: #e5f3ff; color: #005ab5; border-radius: 4px; font-size: 90%; text-decoration: none;">
+                        [bilibili]
+                      </a>
+                    </p>
+
+                  </div>
+
+
+
+                  <!-- Demo 2 : Fold T-shirt -->
+                  <div style="width: 48%; text-align: center;">
+
+                    <div style="position: relative; width: 100%; padding-top: 56.25%;">
+                      <iframe src="https://www.youtube.com/embed/fiVK2cUrdHE"
+                              style="position:absolute; inset:0; width:100%; height:100%; border-radius:8px; box-shadow:0 0 6px rgba(0,0,0,0.2);"
+                              frameborder="0"
+                              allowfullscreen>
+                      </iframe>
+                    </div>
+
+                    <p style="font-style: italic; margin-top: 6px;">
+                      Task instruction: Fold the T-shirt carefully and finish with precise placement.
+                      <a href="https://www.bilibili.com/video/BV1GsnXzzEgJ/?vd_source=1fb867c266cd73e17fb8f7b8020f2f9d"
+                        target="_blank"
+                        style="margin-left: 4px; padding: 2px 6px; background-color: #e5f3ff; color: #005ab5; border-radius: 4px; font-size: 90%; text-decoration: none;">
+                        [bilibili]
+                      </a>
+                    </p>
+
+                  </div>
+
+
+
+                    <!-- Demo 3 -->
+                    <div style="width: 48%; text-align: center;">
+                      <div style="position: relative; width: 100%; padding-top: 56.25%;">
+                        <iframe src="https://www.youtube.com/embed/40ytSYqZ2tc"
+                                style="position:absolute; inset:0; width:100%; height:100%; border-radius:8px; box-shadow:0 0 6px rgba(0,0,0,0.2);"
                                 frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen
-                                style="border-radius: 8px; box-shadow: 0 0 6px rgba(0,0,0,0.2);">
+                                allowfullscreen>
                         </iframe>
                       </div>
-                    </li>
-                    <li><b>Embodied AI </b> studies agents capable of perceiving, reasoning, and acting within physical environments. 
-                      We aim to build systems based on MLLM that integrate multimodal perception, instructon comprehension, and continuous action planning 
-                      to perform complex 3D tasks such as navigation, manipulation, and interactive behaviors.
-                      <!-- <a href="https://www.bilibili.com/video/BV1ef3szuE4N" target="_blank">[bilibili]</a> -->
-                      <!-- 星海图机器人放玩具 -->
-                      <a href="https://www.bilibili.com/video/BV1Hve9zZEWp/?vd_source=1fb867c266cd73e17fb8f7b8020f2f9d" 
-                        target="_blank" 
-                        style="padding: 2px 6px; background-color: #e5f3ff; color: #005ab5; border-radius: 4px; font-size: 90%; text-decoration: none;">
+
+                      <p style="font-style: italic; margin-top: 6px;">
+                        Task instruction: Put the bread into a bowl and heat it in the microwave.
+                        <a href="https://www.bilibili.com/video/BV1u3UMBZEPJ/?vd_source=1fb867c266cd73e17fb8f7b8020f2f9d"
+                        target="_blank"
+                        style="margin-left: 4px; padding: 2px 6px; background-color: #e5f3ff; color: #005ab5; border-radius: 4px; font-size: 90%; text-decoration: none;">
                         [bilibili]
                       </a>
-                      <!-- 星海图机器人叠衣服 -->
-                      <a href="https://www.bilibili.com/video/BV1GsnXzzEgJ/?vd_source=1fb867c266cd73e17fb8f7b8020f2f9d" 
-                        target="_blank" 
-                        style="padding: 2px 6px; background-color: #e5f3ff; color: #005ab5; border-radius: 4px; font-size: 90%; text-decoration: none;">
+                      </p>
+                    </div>
+
+
+                    <!-- Demo 4 -->
+                    <div style="width: 48%; text-align: center;">
+                      <div style="position: relative; width: 100%; padding-top: 56.25%;">
+                        <iframe src="https://www.youtube.com/embed/SBpmoJoMXJ4"
+                                style="position:absolute; inset:0; width:100%; height:100%; border-radius:8px; box-shadow:0 0 6px rgba(0,0,0,0.2);"
+                                frameborder="0"
+                                allowfullscreen>
+                        </iframe>
+                      </div>
+
+                      <p style="font-style: italic; margin-top: 6px;">
+                        Task instruction: Place both the lemon from the bowl and the apple on the table onto the plate, then put the lid on the bowl.
+                      <a href="https://www.bilibili.com/video/BV1u3UMBZEPd/"
+                        target="_blank"
+                        style="margin-left: 4px; padding: 2px 6px; background-color: #e5f3ff; color: #005ab5; border-radius: 4px; font-size: 90%; text-decoration: none;">
                         [bilibili]
                       </a>
-                     <!-- 星海图机器人放玩具视频（YouTube） -->
-                    <div style="margin-top: 10px; display: flex; justify-content: center;">
-                      <!-- <p style="text-align: center; font-weight: bold;">Demo: Embodied Agent in 3D Environment</p> -->
-                      <iframe width="560" height="315"
-                              src="https://www.youtube.com/embed/o97d6H5Z11U"
-                              title="YouTube video player"
+                      
+                      </p>
+                      
+                    </div>
+
+
+                    <!-- Demo 5 -->
+                    <div style="width: 48%; text-align: center;">
+                      <div style="position: relative; width: 100%; padding-top: 56.25%;">
+                        <iframe src="https://www.youtube.com/embed/P4a7GUtmsWY"
+                                style="position:absolute; inset:0; width:100%; height:100%; border-radius:8px; box-shadow:0 0 6px rgba(0,0,0,0.2);"
+                                frameborder="0"
+                                allowfullscreen>
+                        </iframe>
+                      </div>
+
+                      <p style="font-style: italic; margin-top: 6px;">
+                        Task instruction: Grasp a plate and place it on the tablecloth. Both the plates and the tablecloths come in multiple styles.
+                      <a href="https://www.bilibili.com/video/BV1VPUMBYEcR/?vd_source=1fb867c266cd73e17fb8f7b8020f2f9d"
+                        target="_blank"
+                        style="margin-left: 4px; padding: 2px 6px; background-color: #e5f3ff; color: #005ab5; border-radius: 4px; font-size: 90%; text-decoration: none;">
+                        [bilibili]
+                      </a>
+                      </p>
+                    </div>
+
+                    <!-- Demo 6 : Three fruits generalization -->
+                  <div style="width: 48%; text-align: center;">
+                    <div style="position: relative; width: 100%; padding-top: 56.25%;">
+                      <iframe src="https://www.youtube.com/embed/SQm31VbwxL0"
+                              style="position:absolute; inset:0; width:100%; height:100%; border-radius:8px; box-shadow:0 0 6px rgba(0,0,0,0.2);"
                               frameborder="0"
                               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                              allowfullscreen
-                              style="border-radius: 8px; box-shadow: 0 0 6px rgba(0,0,0,0.2);">
+                              allowfullscreen>
                       </iframe>
                     </div>
-                    <p style="text-align: center; font-style: italic; margin-top: 6px;">
-                      Task instruction: Open the drawer, put the toy inside, and then close it.
+
+                    <p style="font-style: italic; margin-top: 6px;">
+                      Task instruction: Grasp three different fruits and place them onto the plate. For each rollout, a different combination of fruits is randomly sampled.
+                    <a href="https://www.bilibili.com/video/BV1XPUMBaEby/?vd_source=1fb867c266cd73e17fb8f7b8020f2f9d"
+                        target="_blank"
+                        style="margin-left: 4px; padding: 2px 6px; background-color: #e5f3ff; color: #005ab5; border-radius: 4px; font-size: 90%; text-decoration: none;">
+                        [bilibili]
+                      </a>
                     </p>
-                    <!-- 星海图机器人叠衣服视频（YouTube） -->
-                    <div style="margin-top: 10px; display: flex; justify-content: center;">
-                    <!-- <p style="text-align: center; font-weight: bold;">Demo: R1 Lite Robot Drawer Demo</p> -->
-                      <iframe width="560" height="315"
-                              src="https://www.youtube.com/embed/fiVK2cUrdHE"
-                              title="YouTube video player"
-                              frameborder="0"
-                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                              allowfullscreen
-                              style="border-radius: 8px; box-shadow: 0 0 6px rgba(0,0,0,0.2);">
-                      </iframe>
-                    </div>
-                    <p style="text-align: center; font-style: italic; margin-top: 6px;">
-                      Task instruction: Fold the T-shirt carefully and finish with precise placement.
-                    </p>
+                  </div>
+
+                  </div>
 
 
                     <p>
@@ -173,43 +338,6 @@
                     <img src="./projects_photos/r1lite3.jpg" alt="R1 Lite in Lab" style="width: 32%; border-radius: 8px;"> -->
                   </div>
 
-
-
-                    </li>
-                    <li><b>AI Agent </b>focuses on sequential decision-making across various complex environments 
-                      such as MineCraft, mobile device. We develop systems based on MLLM that span a wide range of directions, including 
-                      framework-based agents, native agents, and RL-enhanced reasoning.
-                      <!-- <a href="https://www.bilibili.com/video/BV1uE33zFEDM" target="_blank">[bilibili]</a> -->
-                       <a href="https://www.bilibili.com/video/BV1uE33zFEDM" 
-                        target="_blank" 
-                        style="padding: 2px 6px; background-color: #e5f3ff; color: #005ab5; border-radius: 4px; font-size: 90%; text-decoration: none;">
-                        [bilibili]
-                      </a>
-                    <!-- 嵌入两个并排视频 -->
-                    <!-- <div style="display: flex; gap: 20px; margin-top: 10px; flex-wrap: wrap; justify-content: center;">
-                      <video width="320" controls>
-                        <source src="./projects_videos/Multi-Apps-Task-1.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video>
-                      <video width="320" controls>
-                        <source src="./projects_videos/Single-App-Task-1.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video>
-                    </div> -->
-                    <div style="margin-top: 10px; display: flex; justify-content: center;">
-                    <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/2A5p8FCffY4?si=g2fW48cUAF3ArRB9"
-                            title="YouTube video player"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen
-                            style="border-radius: 8px; box-shadow: 0 0 6px rgba(0,0,0,0.2);">
-                    </iframe>
-                  </div>
-                  <p style="text-align: center; font-style: italic; margin-top: 6px;">
-                    Task instruction: Search today's weather in Shenzhen on Chrome, then write the temperature into "today.md" using Markor.
-                  </p>
-                    </li>
                 </ul>
             </div>
 

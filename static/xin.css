@@ -23,6 +23,25 @@
         margin-bottom: 5px;
       }
 
+:root {
+  --site-navbar-height: 50px;
+}
+
+.navbar-sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  min-height: var(--site-navbar-height);
+  border-width: 0 0 1px;
+  border-radius: 0;
+}
+
+@media (max-width: 767px) {
+  .navbar-sticky-top .navbar-collapse {
+    max-height: min(340px, calc(100dvh - var(--site-navbar-height)));
+  }
+}
+
 .orionlab-brand {
   color: white !important;
 }
